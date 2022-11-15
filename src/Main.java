@@ -35,15 +35,16 @@ public class Main {
         System.out.println("Максимальная сумма трат за день составила "+maxNumber+" рублей");
 
         System.out.println("Задача 3");
+        double average=0;
+        for (int j : arr) {
+            average += j / arr.length;
+        }
+        System.out.println("Средняя сумма трат за месяц составила "+average+" рублей");
+
+        System.out.println("Задача 4");
 
         return arr;
-
-
     }
-
-
-
-
     }
 
 
