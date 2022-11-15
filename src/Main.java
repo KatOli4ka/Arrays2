@@ -15,10 +15,30 @@ public class Main {
         for (int i: arr)
             sum += i;
 
-        System.out.println(sum);
+        System.out.println("Сумма трат за месяц составила "+sum+" рублей");
 
+
+        System.out.println("Задача 2");
+        int maxNumber=99999;
+        int minNumber=200001;
+        for (int j : arr)
+            if (minNumber > j) {
+                minNumber = j;
+            }
+        System.out.println("Минимальная сумма трат за день составила "+minNumber+" рублей");
+
+        for (int j : arr) {
+            if (maxNumber < j) {
+                maxNumber = j;
+            }
+        }
+        System.out.println("Максимальная сумма трат за день составила "+maxNumber+" рублей");
+
+        System.out.println("Задача 3");
 
         return arr;
+
+
     }
 
 
