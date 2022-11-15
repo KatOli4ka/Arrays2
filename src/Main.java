@@ -3,8 +3,9 @@ public class Main {
         System.out.println("Задача 1");
         int sum=0;
         int[] arr = generateRandomArray();
-        for (int i = 0; i < arr.length; i++) {
-            sum += arr[i];}
+        for (int j : arr) {
+            sum += j;
+        }
         System.out.println("Сумма трат за месяц составила "+sum+" рублей");}
 
     public static int[] generateRandomArray() {
@@ -13,11 +14,9 @@ public class Main {
         for (int i = 0; i < arr.length; i++) {
             arr[i] = random.nextInt(100_000) + 100_000;
         }
-        return arr;
 
+     System.out.println("Задача 2");
 
-        System.out.println("Задача 2");
-        int[] arr = generateRandomArray();
         int maxNumber=99999;
         int minNumber=200001;
         for (int j : arr)
@@ -46,8 +45,6 @@ public class Main {
         for (int f=reverseFullName.length-1;f>=0;f--){
             System.out.print(reverseFullName[f]);
         }
-
-
         return arr;
     }
     }
