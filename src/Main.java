@@ -1,24 +1,23 @@
 public class Main {
     public static void main(String[] args) {
         System.out.println("Задача 1");
+        int sum=0;
         int[] arr = generateRandomArray();
-
-       }
+        for (int i = 0; i < arr.length; i++) {
+            sum += arr[i];}
+        System.out.println("Сумма трат за месяц составила "+sum+" рублей");}
 
     public static int[] generateRandomArray() {
         java.util.Random random = new java.util.Random();
         int[] arr = new int[30];
-        int sum=0;
         for (int i = 0; i < arr.length; i++) {
             arr[i] = random.nextInt(100_000) + 100_000;
         }
-        for (int i: arr)
-            sum += i;
-
-        System.out.println("Сумма трат за месяц составила "+sum+" рублей");
+        return arr;
 
 
         System.out.println("Задача 2");
+        int[] arr = generateRandomArray();
         int maxNumber=99999;
         int minNumber=200001;
         for (int j : arr)
@@ -26,6 +25,7 @@ public class Main {
                 minNumber = j;
             }
         System.out.println("Минимальная сумма трат за день составила "+minNumber+" рублей");
+
 
         for (int j : arr) {
             if (maxNumber < j) {
